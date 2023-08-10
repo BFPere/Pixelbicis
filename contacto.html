@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<HTml lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Probicis</title>
+        <meta name="description" content="Información sobre bicicletas y rutas">
+        <meta name="keywords" content="btt, carretera, fat bikes, bicicleta, rutas en bici"> <!-- actualment no serveix-->
+        <meta name="author" content="Pere Bayascas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- per visualitzar a mòbils -->
+        <!-- buscar també com es comparteix a Facebook o twitter-->
+        <link rel="stylesheet" href="css/main.css" media="screen">
+        <!-- [if lt IE 9] <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <! [end if]-->
+    </head>
+    <body>
+        <div class="wrapper">
+        <header class="page-header"><!-- logo & navegación-->
+            <nav role="navigation">
+                <img id="logo" src="images/logo.png" alt="logo">
+                <ul>
+                    <li><a href="/index.html" title="Inicio">Portada</a></li>
+                    <li><a href="#" title="Blog">blog</a></li>
+                    <li><a href="sobre-nosotros.html" title="Sobre nosotros">sobre nosotros</a></li>
+                    <li><a href="contacto.html" title="Contacto">contacto</a></li>
+                </ul>
+                <button class="bt-acceso">acceso</button>
+            </nav>
+        </header>
+       
+        <article class="page-contact" role="article"><!-- texto bienvenida-->
+            <div>
+                <h1>Contacta con nosotros</h1>
+                <p>Descubre nuevas rutas y paisajes</p>
+                <p>Somos un grupo de apasionados del ciclismo</p>
+                <p>¡Te esperamos!</p>
+            </div>
+        </article>
+        <main role="main"> 
+            <br>
+            <h2 class="center">Formulario de contacto</h2>
+            <p class="center"><b> Encantados de tener noticias tuyas</b></p>
+            <div class="row">
+                <div class="column">
+                    <!-- Formulario de contacto -->
+                    <form action="action.php" method="post"><!-- action php per validar el formulari -->
+                            <label for="fname">Nombre: </label>    
+                            <input type="text" id="fname" name="fname" value="Su nombre"><!-- Tipus a W3 School - HTML form elements -->
+                            <label for="lname">Apellidos: </label>    
+                            <input type="text" id="lname" name="lname" value="Sus apellidos">
+                            <select name="category" id="category">
+                                <option value="xc">XC</option>
+                                <option value="carretera">Carretera</option>
+                                <option value="enduro">Enduro</option>
+                            </select>
+                            <label for="message">Mensaje: </label>    
+                            <textarea name="message" rows="10" cols="40">Te escuchamos...</textarea> 
+                            <input type="submit" value="Enviar">
+                        </form> 
+                </div>
+                <div class="column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.202850617995!2d2.2851424756325!3d41.60812498227492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7c5fdf3a9e5%3A0x7b7488287f5da78d!2sPorchada%20de%20Granollers!5e0!3m2!1ses!2ses!4v1680987712500!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+                </div>
+            </div>
+           
+        </main>
+  
+        <footer class="page-footer center">
+            <div class="page-footer-container">
+                <small>Información sobre nuestra <a href="politica-privacidad.html">política de privacidad</a></small><br>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+                <p>Creado por: <a href="mailto:pbayascas@yahoo.es">Pere Bayascas</a> Teléfono de contacto: <a href="tel:+34666402577">+34 666 40 25 77</a></p>
+                <p>Carrer Josep Mª de Sagarra, 36, 08402 - Granollers</p>
+            </div>
+        </footer><!-- Privacidad, otro contacto, ...-->
+        </div>
+    </body>
+
+</HTml>
